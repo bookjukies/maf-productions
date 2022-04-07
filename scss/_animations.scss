@@ -1,23 +1,35 @@
 @keyframes toggle-left {
   0% {
-    transform: skewY(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
   }
   50% {
-    transform: skewY(-6deg);
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(-36deg);
   }
   100% {
-    transform: skewY(-11deg);
+    transform: rotate(-45deg);
   }
 }
 
 @keyframes toggle-right {
   0% {
-    transform: skewY(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12deg);
   }
   50% {
-    transform: skewY(6deg);
+    transform: rotate(24deg);
+  }
+  75% {
+    transform: rotate(36deg);
   }
   100% {
-    transform: skewY(11deg);
+    transform: rotate(45deg);
   }
 }

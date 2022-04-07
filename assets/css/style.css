@@ -1,23 +1,35 @@
 @keyframes toggle-left {
   0% {
-    transform: skewY(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-12deg);
   }
   50% {
-    transform: skewY(-6deg);
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(-36deg);
   }
   100% {
-    transform: skewY(-11deg);
+    transform: rotate(-45deg);
   }
 }
 @keyframes toggle-right {
   0% {
-    transform: skewY(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12deg);
   }
   50% {
-    transform: skewY(6deg);
+    transform: rotate(24deg);
+  }
+  75% {
+    transform: rotate(36deg);
   }
   100% {
-    transform: skewY(11deg);
+    transform: rotate(45deg);
   }
 }
 * {
@@ -29,27 +41,24 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  width: 90vw;
-  padding: 5vw;
-}
-
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 90vw;
+  padding: 5vw;
 }
 .header .left {
   width: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .header .display-none {
   display: none;
 }
 .header .right {
   margin-right: 4rem;
+  margin-top: -0.3rem;
 }
 .header .right .burger {
   background-color: rgba(0, 0, 0, 0.75);
@@ -58,6 +67,19 @@ body {
 }
 .header .right .burger:not(.line-h) {
   margin: 0.7rem 0;
+}
+.header .right .burger.line-1 {
+  position: relative;
+  animation-name: toggle-left;
+  animation-duration: 0.3s;
+  transform: rotate(-45deg);
+}
+.header .right .burger.line-3 {
+  position: relative;
+  top: -1rem;
+  animation-name: toggle-right;
+  animation-duration: 0.3s;
+  transform: rotate(45deg);
 }
 .header .menu {
   display: none;
@@ -74,6 +96,10 @@ body {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.75);
   line-height: 8rem;
+}
+
+.main-pic img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
