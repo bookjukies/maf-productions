@@ -1,4 +1,4 @@
-@keyframes toggle {
+@keyframes toggle-left {
   0% {
     transform: skewY(0deg);
   }
@@ -7,5 +7,17 @@
   }
   100% {
     transform: skewY(-11deg);
+  }
+}
+
+@keyframes toggle-right {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(6deg);
+  }
+  100% {
+    transform: skewY(11deg);
   }
 }

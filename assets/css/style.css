@@ -1,4 +1,4 @@
-@keyframes toggle {
+@keyframes toggle-left {
   0% {
     transform: skewY(0deg);
   }
@@ -7,6 +7,17 @@
   }
   100% {
     transform: skewY(-11deg);
+  }
+}
+@keyframes toggle-right {
+  0% {
+    transform: skewY(0deg);
+  }
+  50% {
+    transform: skewY(6deg);
+  }
+  100% {
+    transform: skewY(11deg);
   }
 }
 * {
@@ -34,6 +45,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.header .display-none {
+  display: none;
+}
 .header .right {
   margin-right: 4rem;
 }
@@ -42,10 +56,8 @@ body {
   height: 0.3rem;
   width: 3rem;
 }
-.header .right .burger:nth-child(2) {
+.header .right .burger:not(.line-h) {
   margin: 0.7rem 0;
-  animation-name: toggle;
-  animation-duration: 5s;
 }
 .header .menu {
   display: none;
@@ -55,13 +67,13 @@ body {
   width: 100%;
   background-color: white;
   flex-direction: column;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 .header .menu-open a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.75);
-  line-height: 6rem;
+  line-height: 8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
