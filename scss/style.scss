@@ -1,3 +1,29 @@
 @import "./animations";
 @import "./mixins";
 @import "./variable";
+@import "./typography";
+@import "./layout";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  & .left {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & .right {
+    .burger {
+      background-color: rgba(0, 0, 0, 0.75);
+      height: 0.3rem;
+      width: 3rem;
+
+      &:nth-child(2) {
+        margin: 0.7rem 0;
+      }
+    }
+  }
+}

@@ -1,3 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 90vw;
+  padding: 5vw;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.header .left {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .right .burger {
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 0.3rem;
+  width: 3rem;
+}
+.header .right .burger:nth-child(2) {
+  margin: 0.7rem 0;
+}
 
 /*# sourceMappingURL=style.css.map */
