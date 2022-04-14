@@ -53,12 +53,15 @@ html {
   display: flex;
   justify-content: space-evenly;
 }
+.header .left .logo img {
+  width: 10rem;
+}
 .header .display-none {
   display: none;
 }
 .header .right {
   margin-right: 4rem;
-  margin-top: -0.3rem;
+  margin-top: 1.8rem;
 }
 .header .right .burger {
   background-color: rgba(0, 0, 0, 0.75);
@@ -98,8 +101,13 @@ html {
   line-height: 8rem;
 }
 
-.main-pic img {
-  width: 100%;
+.main-pic {
+  height: 95vh;
+  background-image: url(../images/main-long.jpg);
+  background-size: 100%;
+  background-position: top;
+  position: relative;
+  width: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

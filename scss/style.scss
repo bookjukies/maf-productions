@@ -14,6 +14,10 @@
     width: 60%;
     display: flex;
     justify-content: space-evenly;
+
+    & .logo img{ 
+      width: 10rem;
+    }
   }
   //class to display none
   & .display-none {
@@ -23,7 +27,7 @@
   //burger for moble menu toggling
   & .right {
     margin-right: 4rem;
-    margin-top: -0.3rem;
+    margin-top: 1.8rem;
     .burger {
       background-color: rgba(0, 0, 0, 0.75);
       height: 0.3rem;
@@ -67,8 +71,11 @@
   }
 }
 
-.main-pic {
-  & img {
-    width: 100%;
-  }
+.main-pic{
+  height: 95vh;
+  background-image: url(../images/main-long.jpg);
+  background-size: 100%;
+  background-position: top;
+  position: relative;
+  width: inherit;
 }

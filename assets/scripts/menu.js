@@ -1,13 +1,13 @@
 const burger = document.querySelectorAll(`.burger`)
-const social = document.querySelector(`.left`)
+const social = document.querySelector(`.socials`)
 const menu = document.getElementById(`menu`)
 const lineH= document.querySelector(`.line-h`)
 const burgerLineOne = document.querySelector(`.burger`)
 const burgerLineThree = document.querySelector(`.burger:nth-child(3)`)
-const test = document.querySelector(`.main-pic`)
 
-test.style.backgroundImage=`url("../images/main-long.jpg")`
 
+
+social.classList.add(`display-none`)
 
 for(const line of burger){
     let enabler = 0
@@ -26,7 +26,6 @@ for(const line of burger){
             enabler = enabler +1
         }
         else{
-            social.classList.remove(`display-none`)
             menu.classList.remove(`menu-open`)
             lineH.classList.remove(`display-none`)
 
