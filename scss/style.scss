@@ -70,12 +70,90 @@
     }
   }
 }
+p{
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+main{
+  // height: 3000px;
 
-.main-pic{
-  height: 95vh;
-  background-image: url(../images/main-long.jpg);
-  background-size: 100%;
-  background-position: top;
+& .hero{
+  text-align: center;
   position: relative;
-  width: inherit;
+  height: 80vh;
+  background-image: url(../images/main-long.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  margin: 0;
+  padding: 0;
+  & .hero-text{
+    position: absolute;
+    top: 20rem;
+    color: $gold-color;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    & .hero-text-maf{
+      
+      font-size: 8rem;
+    }
+  }
+  }
+& .about{
+  font-size: 1.5rem;
+  margin: 5rem 0;
+  padding: 0 2rem;
+  & .about-heading{
+    
+    text-transform: capitalize;
+    font-size: 2rem;
+  } 
+  & p{
+      font-size: 2rem;
+    }
+}
+
+& .photos{
+  padding: 0 2rem;
+    & .grid-two-col{
+      display: flex;
+      width: 100%;
+      & .ring{
+        flex: 1;
+        width: 10rem;
+        height: auto;
+        
+      }}
+
+    & .grid-one-col{
+
+      
+      & .main-pics{
+        width: 100%;
+        
+      }
+    }
+      
+    
+  }
+}
+footer{
+  margin: 2rem 0;
+  padding: 0 2rem;
+  & .socials-footer{
+    display: flex;
+    align-content: space-between;
+    margin-left: 10%;
+    & .fa-brands{
+      flex: 1;
+   
+    }
+  }
+  & .dev-familiar{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
 }

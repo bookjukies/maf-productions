@@ -39,6 +39,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: rgba(0, 115, 255, 0.186);
 }
 
 .header {
@@ -101,13 +102,78 @@ html {
   line-height: 8rem;
 }
 
-.main-pic {
-  height: 95vh;
-  background-image: url(../images/main-long.jpg);
-  background-size: 100%;
-  background-position: top;
+p {
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+
+main .hero {
+  text-align: center;
   position: relative;
-  width: inherit;
+  height: 80vh;
+  background-image: url(../images/main-long.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  margin: 0;
+  padding: 0;
+}
+main .hero .hero-text {
+  position: absolute;
+  top: 20rem;
+  color: #ce933a;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+main .hero .hero-text .hero-text-maf {
+  font-size: 8rem;
+}
+main .about {
+  font-size: 1.5rem;
+  margin: 5rem 0;
+  padding: 0 2rem;
+}
+main .about .about-heading {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+main .about p {
+  font-size: 2rem;
+}
+main .photos {
+  padding: 0 2rem;
+}
+main .photos .grid-two-col {
+  display: flex;
+  width: 100%;
+}
+main .photos .grid-two-col .ring {
+  flex: 1;
+  width: 10rem;
+  height: auto;
+}
+main .photos .grid-one-col .main-pics {
+  width: 100%;
+}
+
+footer {
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+footer .socials-footer {
+  display: flex;
+  align-content: space-between;
+  margin-left: 10%;
+}
+footer .socials-footer .fa-brands {
+  flex: 1;
+}
+footer .dev-familiar {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */
