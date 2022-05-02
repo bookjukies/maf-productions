@@ -33,3 +33,47 @@
     transform: rotate(45deg);
   }
 }
+
+@keyframes path_up {
+  0%{
+    clip-path: polygon(0 0,
+    100% 0,
+    100% 100%,
+    0 100%);
+  }
+    20% {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+      40% {
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      }
+        60% {
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+        }
+        80% {
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+        }
+  
+}
+
+@keyframes change_opacity {
+  0%{
+   opacity: 0
+   ; 
+  }
+  20%{
+    opacity: 0;
+  }
+  40%{
+   opacity: .2; 
+  }
+  60% {
+    opacity: .4;
+  }
+  80% {
+    opacity: .6;
+  }
+  100% {
+    opacity: 8;
+  }
+}

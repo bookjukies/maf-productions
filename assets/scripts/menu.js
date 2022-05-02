@@ -4,10 +4,13 @@ const menu = document.getElementById(`menu`)
 const lineH= document.querySelector(`.line-h`)
 const burgerLineOne = document.querySelector(`.burger`)
 const burgerLineThree = document.querySelector(`.burger:nth-child(3)`)
+const main = document.querySelectorAll(`.main-content`)
 
 
 
 social.classList.add(`display-none`)
+
+
 
 for(const line of burger){
     let enabler = 0

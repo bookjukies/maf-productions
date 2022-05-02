@@ -4,6 +4,15 @@
 @import "./typography";
 @import "./layout";
 
+@font-face {
+  font-family: "3d_custom";
+  src: url("../fonts/bullpen_3d.ttf");
+}
+@font-face {
+  font-family: "Custom_filled";
+  src: url("../fonts/bullpen_hv.ttf");
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -59,6 +68,7 @@
   & .menu-open {
     display: flex;
     width: 100%;
+
     flex-direction: column;
     font-size: 4rem;
     text-align: center;
@@ -78,26 +88,63 @@ main{
   // height: 3000px;
 
 & .hero{
+
   text-align: center;
   position: relative;
   height: 80vh;
   background-image: url(../images/main-long.jpg);
   background-size: cover;
+  animation: path_up .9s ease-out;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   margin: 0;
   padding: 0;
-  & .hero-text{
-    position: absolute;
-    top: 20rem;
-    color: $gold-color;
-    font-size: 5rem;
-    text-transform: uppercase;
+  
+  }& .hero-text{
     font-weight: 900;
-    & .hero-text-maf{
-      
-      font-size: 8rem;
+    
+    color: rgb(212,175,55);
+    position: absolute;
+    font-family: "Custom_filled";
+    top: 75%;
+    left: 45%;
+    font-size: 1.3rem;
+    visibility: visible;
+    text-transform: uppercase;
+    text-align: center;
+    animation: change_opacity 3s  ease-in;
+    & .maf{
+      font-family: "3d_custom";
+      letter-spacing: 0.4rem;
+      text-align: center;
+      display: block;
+      font-size: 3rem;
+      margin-top: -4rem;
+      margin-left: 40%;
+      margin-bottom: 20%;
     }
-  }
+    & h2{
+      font-family: "3d_custom";
+      font-weight: bolder;
+      font-size: 2rem;
+      text-align: justify;
+      margin-top: 7.5%;
+      margin-left: -30%;
+      margin-bottom: 7.5%;
+      letter-spacing: normal;
+      
+    }
+
+    & .top-hr{
+      margin-top: 20%;
+      border: 1px solid rgba(24, 24, 24, 0.342);
+      margin-left: -20%;
+  
+    }
+    & .bottom-hr {
+      border: 1px solid rgba(24, 24, 24, 0.342);
+      margin-left: -50%;
+    }
+
   }
 & .about{
   font-size: 1.5rem;
@@ -109,6 +156,7 @@ main{
     font-size: 2rem;
   } 
   & p{
+
       font-size: 2rem;
     }
 }
