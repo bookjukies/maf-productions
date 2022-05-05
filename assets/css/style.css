@@ -237,11 +237,12 @@ footer {
   padding: 0 2rem;
 }
 footer .socials-footer {
+  margin-top: 10rem;
   display: flex;
   align-content: space-between;
   margin-left: 10%;
 }
-footer .socials-footer .fa-brands {
+footer .socials-footer a {
   flex: 1;
 }
 footer .dev-familiar {
