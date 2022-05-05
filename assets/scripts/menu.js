@@ -4,8 +4,8 @@ const menu = document.getElementById(`menu`)
 const lineH= document.querySelector(`.line-h`)
 const burgerLineOne = document.querySelector(`.burger`)
 const burgerLineThree = document.querySelector(`.burger:nth-child(3)`)
-const mainC = document.body
-
+const mainC = document.querySelector(`.main-content`)
+const anchor = document.querySelector(`.anchor`)
 
 
 social.classList.add(`display-none`)
@@ -20,7 +20,10 @@ for(const line of burger){
             menu.classList.add(`menu-open`)
             lineH.classList.add(`display-none`)
             
+            mainC.classList.add(`display-menu-none`)
+            anchor.classList.add(`display-menu-none`)
             
+
             burgerLineOne.classList.add(`line-1`)
             burgerLineThree.classList.add(`line-3`)
 
@@ -32,6 +35,10 @@ for(const line of burger){
             menu.classList.remove(`menu-open`)
             lineH.classList.remove(`display-none`)
 
+            mainC.classList.remove(`display-menu-none`)
+            anchor.classList.remove(`display-menu-none`)
+            
+
             burgerLineOne.classList.remove(`line-1`)
             burgerLineThree.classList.remove(`line-3`)
             enabler = 0
@@ -40,7 +47,7 @@ for(const line of burger){
     )
 }
 
-const anchor = document.querySelector(`.anchor`)
+
 window.onload(
     anchor.innerHTML = `
     <section class="photos main-content">
@@ -60,3 +67,4 @@ window.onload(
         </div>
     </section>`
 )
+

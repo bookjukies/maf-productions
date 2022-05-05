@@ -68,14 +68,23 @@
   & .menu-open {
     display: flex;
     width: 100%;
+    font-family: "3d_custom";
 
     flex-direction: column;
     font-size: 4rem;
-    text-align: center;
+    text-align: justify;
+
+   
+
+    margin-top: 10rem;
+    margin-left: -10rem;
+    margin-bottom: 3rem;
     & a {
       text-decoration: none;
       color: $menu-color;
       line-height: 8rem;
+      color:   $gold-color;
+      border-bottom: .1rem solid grey;
     }
   }
 }
@@ -205,6 +214,7 @@ footer{
     text-align: center;
     font-size: 2rem;
     text-transform: capitalize;
+    font-family: "3d_custom";
   }
 }
 
@@ -215,4 +225,8 @@ footer{
 }
 img{
   width: 90vw;
+}
+
+.display-menu-none{
+  display: none;
 }
