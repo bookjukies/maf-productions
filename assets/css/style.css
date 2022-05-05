@@ -157,7 +157,7 @@ main .hero {
   height: 80vh;
   background-image: url(../images/main-long.jpg);
   background-size: cover;
-  animation: path_up 1s ease-out;
+  animation: path_up 1s 3s ease-out;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   margin: 0;
   padding: 0;
@@ -167,13 +167,13 @@ main .hero-text {
   color: rgb(212, 175, 55);
   position: absolute;
   font-family: "Custom_filled";
-  top: 85%;
+  top: 83%;
   left: 45%;
   font-size: 1.3rem;
   visibility: visible;
   text-transform: uppercase;
   text-align: center;
-  animation: change_opacity 3s ease-in;
+  animation: change_opacity 3s 3s ease-in;
 }
 main .hero-text .maf {
   font-family: "3d_custom";
@@ -216,6 +216,9 @@ main .about .about-heading {
 main .about p {
   font-size: 2rem;
 }
+main .anchor {
+  margin-top: 30%;
+}
 main .photos {
   padding: 0 2rem;
 }
@@ -237,7 +240,6 @@ footer {
   padding: 0 2rem;
 }
 footer .socials-footer {
-  margin-top: 10rem;
   display: flex;
   align-content: space-between;
   margin-left: 10%;

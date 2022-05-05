@@ -4,7 +4,7 @@ const menu = document.getElementById(`menu`)
 const lineH= document.querySelector(`.line-h`)
 const burgerLineOne = document.querySelector(`.burger`)
 const burgerLineThree = document.querySelector(`.burger:nth-child(3)`)
-const main = document.querySelectorAll(`.main-content`)
+const mainC = document.body
 
 
 
@@ -40,3 +40,23 @@ for(const line of burger){
     )
 }
 
+const anchor = document.querySelector(`.anchor`)
+window.onload(
+    anchor.innerHTML = `
+    <section class="photos main-content">
+        <div class="grid-two-col">
+            <img src="./assets/images/wedding-ring-pride.jpg" class="ring"
+                alt="Groom putting a ring on the bride's ring-finger">
+            <img src="./assets/images/wedding-ring-groom.jpg" class="ring"
+                alt="pride putting a ring on the groom's ring-finger">
+        </div>
+        <div class="grid-one-col">
+            <img class="main-pics" src="./assets/images/main.jpg" alt="Groom and bride">
+            <img class="main-pics" src="./assets/images/wedding-dance.jpg" alt="Bride and groom dancing">
+            <img class="main-pics" src="./assets/images/wedding-swing.jpg"
+                alt="Bride on a swing with the groom by her side">
+            <img class="main-pics" src="./assets/images/wedding-bride.jpg"
+                alt="Bride on wearing a white dress walling acroos the asle">
+        </div>
+    </section>`
+)
