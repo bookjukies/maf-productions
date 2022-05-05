@@ -157,7 +157,7 @@ main .hero {
   height: 80vh;
   background-image: url(../images/main-long.jpg);
   background-size: cover;
-  animation: path_up 0.9s ease-out;
+  animation: path_up 1s ease-out;
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
   margin: 0;
   padding: 0;
@@ -167,7 +167,7 @@ main .hero-text {
   color: rgb(212, 175, 55);
   position: absolute;
   font-family: "Custom_filled";
-  top: 80%;
+  top: 85%;
   left: 45%;
   font-size: 1.3rem;
   visibility: visible;
