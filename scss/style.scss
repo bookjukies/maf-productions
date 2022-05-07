@@ -197,7 +197,8 @@ main{
   }
 }
 footer{
-  margin: 2rem 0;
+  margin:  2rem 0;
+  margin-bottom: 30rem;
   padding: 0 2rem;
   & .socials-footer{
     // margin-top: 10rem;
@@ -206,7 +207,7 @@ footer{
     margin-left: 10%;
     & a {
       flex: 1;
-   
+      
     }
   }
   & .dev-familiar{
@@ -220,8 +221,9 @@ footer{
 
 //<--- portfolio --> //
 .potfolio{
+  margin-top: -10rem;
   padding: 5vw;
-  text-align: center
+  text-align: center;
 }
 img{
   width: 90vw;
