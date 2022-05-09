@@ -101,8 +101,11 @@ let content = dynamic_content.home
 console.log(dynamic_content["test"])
 console.log(`hi`);
 
+let x =(window.matchMedia("(max-width: 767px)"))
+if(x.matches){
+    social.classList.add(`display-none`)
+}
 
-social.classList.add(`display-none`)
 
 
 

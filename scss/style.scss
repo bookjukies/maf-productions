@@ -13,6 +13,63 @@
   src: url("../fonts/bullpen_hv.ttf");
 }
 
+
+body{
+  padding: 1rem 5rem ;
+}
+img{
+  width: 200px;
+}
+.socials{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 1rem;
+  & a{
+    margin: 2rem 0;
+  }
+}
+.logo{
+  & img{
+    width: 7.5rem;
+  }
+}
+.header{
+  display: flex;
+
+  & .menu{
+
+    & a{
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
 .header {
   display: flex;
   flex-direction: row;
@@ -224,6 +281,9 @@ footer{
   margin-top: -10rem;
   padding: 5vw;
   text-align: center;
+  color: $gold-color;
+  font-family: "Custom_filled";
+  font-size: 2rem;
 }
 img{
   width: 90vw;
@@ -231,4 +291,9 @@ img{
 
 .display-menu-none{
   display: none;
+}
+
+
+
+
 }

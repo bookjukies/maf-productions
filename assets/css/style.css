@@ -86,193 +86,227 @@ html {
   font-family: "Custom_filled";
   src: url("../fonts/bullpen_hv.ttf");
 }
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 90vw;
-  padding: 5vw;
-}
-.header .left {
-  width: 60%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.header .left .logo img {
-  width: 10rem;
-}
-.header .display-none {
-  display: none;
-}
-.header .right {
-  margin-right: 4rem;
-  margin-top: 1.8rem;
-}
-.header .right .burger {
-  background-color: rgba(0, 0, 0, 0.75);
-  height: 0.3rem;
-  width: 3rem;
-}
-.header .right .burger:not(.line-h) {
-  margin: 0.7rem 0;
-}
-.header .right .burger.line-1 {
-  position: relative;
-  animation-name: toggle-left;
-  animation-duration: 0.3s;
-  transform: rotate(-45deg);
-}
-.header .right .burger.line-3 {
-  position: relative;
-  top: -1rem;
-  animation-name: toggle-right;
-  animation-duration: 0.3s;
-  transform: rotate(45deg);
-}
-.header .menu {
-  display: none;
-}
-.header .menu-open {
-  display: flex;
-  width: 100%;
-  font-family: "3d_custom";
-  flex-direction: column;
-  font-size: 4rem;
-  text-align: justify;
-  margin-top: 10rem;
-  margin-left: -10rem;
-  margin-bottom: 3rem;
-}
-.header .menu-open a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.75);
-  line-height: 8rem;
-  color: #ce933a;
-  border-bottom: 0.1rem solid grey;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-  text-align: justify;
-}
-
-main .hero {
-  text-align: center;
-  position: relative;
-  height: 80vh;
-  background-image: url(../images/main-long.jpg);
-  background-size: cover;
-  animation: path_up 1s 3s ease-out;
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  margin: 0;
-  padding: 0;
-}
-main .hero-text {
-  font-weight: 900;
-  color: rgb(212, 175, 55);
-  position: absolute;
-  font-family: "Custom_filled";
-  top: 83%;
-  left: 45%;
-  font-size: 1.3rem;
-  visibility: visible;
-  text-transform: uppercase;
-  text-align: center;
-  animation: change_opacity 3s 3s ease-in;
-}
-main .hero-text .maf {
-  font-family: "3d_custom";
-  letter-spacing: 0.4rem;
-  text-align: center;
-  display: block;
-  font-size: 3rem;
-  margin-top: -4rem;
-  margin-left: 45%;
-  margin-bottom: 20%;
-}
-main .hero-text h2 {
-  font-family: "3d_custom";
-  font-weight: bolder;
-  font-size: 2rem;
-  text-align: justify;
-  margin-top: 7.5%;
-  margin-left: -25%;
-  margin-bottom: 7.5%;
-  letter-spacing: normal;
-}
-main .hero-text .top-hr {
-  margin-top: 20%;
-  border: 1px solid rgba(24, 24, 24, 0.342);
-  margin-left: -20%;
-}
-main .hero-text .bottom-hr {
-  border: 1px solid rgba(24, 24, 24, 0.342);
-  margin-left: -50%;
-}
-main .about {
-  font-size: 1.5rem;
-  margin: 5rem 0;
-  padding: 0 2rem;
-}
-main .about .about-heading {
-  text-transform: capitalize;
-  font-size: 2rem;
-}
-main .about p {
-  font-size: 2rem;
-}
-main .anchor {
-  margin-top: 30%;
-}
-main .photos {
-  padding: 0 2rem;
-}
-main .photos .grid-two-col {
-  display: flex;
-  width: 100%;
-}
-main .photos .grid-two-col .ring {
-  flex: 1;
-  width: 10rem;
-  height: auto;
-}
-main .photos .grid-one-col .main-pics {
-  width: 100%;
-}
-
-footer {
-  margin: 2rem 0;
-  padding: 0 2rem;
-}
-footer .socials-footer {
-  display: flex;
-  align-content: space-between;
-  margin-left: 10%;
-}
-footer .socials-footer a {
-  flex: 1;
-}
-footer .dev-familiar {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 2rem;
-  text-transform: capitalize;
-  font-family: "3d_custom";
-}
-
-.potfolio {
-  margin-top: -10rem;
-  padding: 5vw;
-  text-align: center;
+body {
+  padding: 1rem 5rem;
 }
 
 img {
-  width: 90vw;
+  width: 200px;
 }
 
-.display-menu-none {
-  display: none;
+.socials {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 1rem;
+}
+.socials a {
+  margin: 2rem 0;
+}
+
+.logo img {
+  width: 7.5rem;
+}
+
+.header {
+  display: flex;
+}
+.header .menu a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    padding: 5vw;
+  }
+  .header .left {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .header .left .logo img {
+    width: 10rem;
+  }
+  .header .display-none {
+    display: none;
+  }
+  .header .right {
+    margin-right: 4rem;
+    margin-top: 1.8rem;
+  }
+  .header .right .burger {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 0.3rem;
+    width: 3rem;
+  }
+  .header .right .burger:not(.line-h) {
+    margin: 0.7rem 0;
+  }
+  .header .right .burger.line-1 {
+    position: relative;
+    animation-name: toggle-left;
+    animation-duration: 0.3s;
+    transform: rotate(-45deg);
+  }
+  .header .right .burger.line-3 {
+    position: relative;
+    top: -1rem;
+    animation-name: toggle-right;
+    animation-duration: 0.3s;
+    transform: rotate(45deg);
+  }
+  .header .menu {
+    display: none;
+  }
+  .header .menu-open {
+    display: flex;
+    width: 100%;
+    font-family: "3d_custom";
+    flex-direction: column;
+    font-size: 4rem;
+    text-align: justify;
+    margin-top: 10rem;
+    margin-left: -10rem;
+    margin-bottom: 3rem;
+  }
+  .header .menu-open a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 8rem;
+    color: #ce933a;
+    border-bottom: 0.1rem solid grey;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+  }
+
+  main .hero {
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    background-image: url(../images/main-long.jpg);
+    background-size: cover;
+    animation: path_up 1s 3s ease-out;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    margin: 0;
+    padding: 0;
+  }
+  main .hero-text {
+    font-weight: 900;
+    color: rgb(212, 175, 55);
+    position: absolute;
+    font-family: "Custom_filled";
+    top: 83%;
+    left: 45%;
+    font-size: 1.3rem;
+    visibility: visible;
+    text-transform: uppercase;
+    text-align: center;
+    animation: change_opacity 3s 3s ease-in;
+  }
+  main .hero-text .maf {
+    font-family: "3d_custom";
+    letter-spacing: 0.4rem;
+    text-align: center;
+    display: block;
+    font-size: 3rem;
+    margin-top: -4rem;
+    margin-left: 45%;
+    margin-bottom: 20%;
+  }
+  main .hero-text h2 {
+    font-family: "3d_custom";
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: justify;
+    margin-top: 7.5%;
+    margin-left: -25%;
+    margin-bottom: 7.5%;
+    letter-spacing: normal;
+  }
+  main .hero-text .top-hr {
+    margin-top: 20%;
+    border: 1px solid rgba(24, 24, 24, 0.342);
+    margin-left: -20%;
+  }
+  main .hero-text .bottom-hr {
+    border: 1px solid rgba(24, 24, 24, 0.342);
+    margin-left: -50%;
+  }
+  main .about {
+    font-size: 1.5rem;
+    margin: 5rem 0;
+    padding: 0 2rem;
+  }
+  main .about .about-heading {
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  main .about p {
+    font-size: 2rem;
+  }
+  main .anchor {
+    margin-top: 30%;
+  }
+  main .photos {
+    padding: 0 2rem;
+  }
+  main .photos .grid-two-col {
+    display: flex;
+    width: 100%;
+  }
+  main .photos .grid-two-col .ring {
+    flex: 1;
+    width: 10rem;
+    height: auto;
+  }
+  main .photos .grid-one-col .main-pics {
+    width: 100%;
+  }
+
+  footer {
+    margin: 2rem 0;
+    padding: 0 2rem;
+  }
+  footer .socials-footer {
+    display: flex;
+    align-content: space-between;
+    margin-left: 10%;
+  }
+  footer .socials-footer a {
+    flex: 1;
+  }
+  footer .dev-familiar {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-family: "3d_custom";
+  }
+
+  .potfolio {
+    margin-top: -10rem;
+    padding: 5vw;
+    text-align: center;
+    color: #ce933a;
+    font-family: "Custom_filled";
+    font-size: 2rem;
+  }
+
+  img {
+    width: 90vw;
+  }
+
+  .display-menu-none {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
