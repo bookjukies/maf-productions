@@ -86,60 +86,6 @@ html {
   font-family: "Custom_filled";
   src: url("../fonts/bullpen_hv.ttf");
 }
-@media only screen and (min-width: 768px) {
-  body {
-    padding: 1rem 5rem;
-  }
-
-  img {
-    width: 200px;
-  }
-
-  .socials {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    left: 1rem;
-  }
-  .socials a {
-    margin: 2rem 0;
-  }
-
-  .logo img {
-    width: 7.5rem;
-  }
-
-  .header {
-    display: flex;
-    width: 100%;
-  }
-  .header .menu {
-    display: flex;
-    width: 100%;
-    margin: 1% 0 0 10%;
-    position: relative;
-  }
-  .header .menu a {
-    flex: 1;
-    text-decoration: none;
-    font-size: 2rem;
-    font-family: "Custom_filled";
-    text-align: center;
-    color: #ce933a;
-    text-transform: uppercase;
-    font-weight: 900;
-  }
-  .header .menu a:hover {
-    border: 0.1rem solid rgba(147, 147, 147, 0.546);
-    border-top: 1rem;
-    border-right: 1rem;
-    font-family: "3d_custom";
-    font-size: 2.5rem;
-    letter-spacing: 0.6rem;
-    text-transform: capitalize;
-    padding-top: 1rem;
-  }
-}
 @media only screen and (max-width: 768px) {
   .header {
     display: flex;
@@ -331,6 +277,93 @@ html {
 
   .display-menu-none {
     display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 1rem 5rem;
+    position: relative;
+  }
+
+  .main-content .hero {
+    height: 100rem;
+    margin: 0 -5rem;
+    background-image: url("../images/wedding-dance.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 0.1srem;
+  }
+  .main-content .hero-text {
+    position: absolute;
+    top: 30rem;
+    left: 30%;
+    color: #ce933a;
+    font-size: 2rem;
+    font-family: "Custom_filled";
+    text-transform: uppercase;
+  }
+  .main-content .add-desktop .about .about-content {
+    display: flex;
+    margin: 0 -5rem;
+  }
+  .main-content .add-desktop .about .about-content img {
+    width: 40rem;
+  }
+  .main-content .add-desktop .about .about-content p {
+    margin: 2rem;
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+  }
+
+  .socials {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 1rem;
+    top: 20rem;
+  }
+  .socials a {
+    margin: 2rem 0;
+    color: black;
+  }
+
+  .logo img {
+    width: 7.5rem;
+  }
+
+  .header {
+    display: flex;
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+  }
+  .header .menu {
+    display: flex;
+    width: 100%;
+    margin: 1% 0 0 5%;
+    position: relative;
+  }
+  .header .menu a {
+    flex: 1;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Custom_filled";
+    text-align: center;
+    color: #ce933a;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .header .menu a:hover {
+    border: 0.1rem solid rgba(147, 147, 147, 0.546);
+    border-top: 1rem;
+    border-right: 1rem;
+    font-family: "3d_custom";
+    font-size: 2.5rem;
+    letter-spacing: 0.6rem;
+    text-transform: capitalize;
+    padding-top: 1rem;
   }
 }
 

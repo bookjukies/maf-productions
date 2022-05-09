@@ -7,6 +7,7 @@ const burgerLineThree = document.querySelector(`.burger:nth-child(3)`)
 const mainC = document.querySelector(`.main-content`)
 const anchor = document.querySelector(`.anchor`)
 const pages = document.querySelectorAll(`.pages-links`)
+const desktopAbout= document.querySelector(`.add-desktop`)
 
 
 // const home = document.getElementById(`home`)
@@ -51,11 +52,13 @@ const dynamic_content={
         <div class="about">
     
     <span class="about-heading">
-    <h1>about</h1>
+    <h1>about</h1></span>
+
+    <div class="about-content">
     <div class="camera">
         <img src="/assets/images/maf-camera.jpg" alt="">
     </div>
-</span>
+<div class="about-text">
 <p>
     I am Mafungwase Nxumalo, a photographer based in durban. I shoot weddings, events and portraits .
     I believe that everything we see and surrounds us is practically a memory but my job as a photographer it is to
@@ -70,11 +73,11 @@ const dynamic_content={
     important
     for me to always build a professional trusting relationships with my clients.
     Allow me to tell your story through my lense.</p>
-
+</div>
     <div class="professional">
         <img src="/assets/images/maf-professional.jpg" alt="">
     </div>
-
+</div>
 </div>`
     ,
     // <-------separate-------->
@@ -94,6 +97,7 @@ const dynamic_content={
             <img class="main-pics" src="./assets/images/wedding-bride.jpg"
                 alt="Bride on wearing a white dress walling acroos the asle">
         </div>
+
     </section>`,
 }
 
@@ -104,9 +108,11 @@ console.log(`hi`);
 let x =(window.matchMedia("(max-width: 767px)"))
 if(x.matches){
     social.classList.add(`display-none`)
+}else{
+    desktopAbout.innerHTML = dynamic_content.about
 }
 
-
+console.log(social.pageYOffset);
 
 
 for(const line of burger){
