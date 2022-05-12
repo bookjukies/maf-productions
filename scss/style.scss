@@ -240,23 +240,54 @@ img{
 }
 
 @media only screen and (min-width: 768px) {
-  body {
+  .header {
     padding: 1rem 5rem;
     position: relative;
   }
 .main-content{
+  .anchor{
+    & .about{
+      display: none;
+    }
+  }
+  & .potfolio{
+    & .personalshoot-pics{
+      display: flex;
+      flex-direction: column;
+      & img{
+        width: 100%;
+      }
+      & .long{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+      }
+      
+    }
+    & .event-pics {
+      display: flex;
+      flex-direction: column;
+    
+      & img {
+        width: 100%;
+      }
+    
+    }
+    
+  }
   
   & .hero {
-    height: 100rem;
-    margin: 0 -5rem;
+    height: 80rem;
+    
     background-image: url("../images/wedding-dance.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    font-size: 0.1srem;
+
   }
   & .hero-text{
     position: absolute;
-    top: 30rem;
+    margin: 0;
+    top: 120%;
     left: 30%;
     color: $gold-color;
     font-size: 2rem;
@@ -264,20 +295,46 @@ img{
     text-transform: uppercase;
   }
 
-  & .add-desktop{
-    & .about{
+  & .photos{
+    display: flex;
+    flex-direction: column;
+    & .grid-two-col{
+      display: flex;
 
+      & img{
+        flex: 1;
+      }
+    }
+    & .grid-one-col{
+      display: flex;
+      flex-direction: column;
+      & img{
+        width: 100%;
+      }
+    }
+  }
+  & .add-desktop{
+ 
+    & .about{
+      & span{
+        position: absolute;
+        left: 40%;
+        font-size: 2rem;
+        text-align: center;
+
+      }
       & .about-content{
         display: flex;
-        margin: 0 -5rem;
+      
 
           & img{
-            width: 40rem;
+            width: 37.5rem;
           }
           
-        & p{
-          margin: 2rem;
-          text-align: center;
+        & .about-text{
+          font-size: 1.5rem;
+          margin: 5rem 2.5rem;
+          text-align: justify;
         }
       }
     }
@@ -315,7 +372,7 @@ img {
   display: flex;
   width: 100%;
   // border-bottom: .2rem solid gray;
-  padding: 0 0 1.5rem 0;
+  padding: 1rem 1rem 1.5rem 1rem;
 
   & .menu {
     display: flex;
@@ -348,6 +405,21 @@ img {
     }
   }
 }
- 
+ footer{
+   display: flex;
+   flex-direction: column;
+   & .socials-footer{
+     padding: 1rem 20rem;
+     display: flex;
+     justify-content: space-between;
+   }
+
+   & .dev-familiar{
+     text-align: center;
+     font-family: "3d_custom";
+     font-size: 3rem;
+     padding: 1rem 0;
+   }
+ }
 }
 

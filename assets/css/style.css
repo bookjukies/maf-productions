@@ -280,38 +280,82 @@ html {
   }
 }
 @media only screen and (min-width: 768px) {
-  body {
+  .header {
     padding: 1rem 5rem;
     position: relative;
   }
 
+  .main-content .anchor .about {
+    display: none;
+  }
+  .main-content .potfolio .personalshoot-pics {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .potfolio .personalshoot-pics img {
+    width: 100%;
+  }
+  .main-content .potfolio .personalshoot-pics .long {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .main-content .potfolio .event-pics {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .potfolio .event-pics img {
+    width: 100%;
+  }
   .main-content .hero {
-    height: 100rem;
-    margin: 0 -5rem;
+    height: 80rem;
     background-image: url("../images/wedding-dance.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    font-size: 0.1srem;
   }
   .main-content .hero-text {
     position: absolute;
-    top: 30rem;
+    margin: 0;
+    top: 120%;
     left: 30%;
     color: #ce933a;
     font-size: 2rem;
     font-family: "Custom_filled";
     text-transform: uppercase;
   }
+  .main-content .photos {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .photos .grid-two-col {
+    display: flex;
+  }
+  .main-content .photos .grid-two-col img {
+    flex: 1;
+  }
+  .main-content .photos .grid-one-col {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .photos .grid-one-col img {
+    width: 100%;
+  }
+  .main-content .add-desktop .about span {
+    position: absolute;
+    left: 40%;
+    font-size: 2rem;
+    text-align: center;
+  }
   .main-content .add-desktop .about .about-content {
     display: flex;
-    margin: 0 -5rem;
   }
   .main-content .add-desktop .about .about-content img {
-    width: 40rem;
+    width: 37.5rem;
   }
-  .main-content .add-desktop .about .about-content p {
-    margin: 2rem;
-    text-align: center;
+  .main-content .add-desktop .about .about-content .about-text {
+    font-size: 1.5rem;
+    margin: 5rem 2.5rem;
+    text-align: justify;
   }
 
   img {
@@ -337,7 +381,7 @@ html {
   .header {
     display: flex;
     width: 100%;
-    padding: 0 0 1.5rem 0;
+    padding: 1rem 1rem 1.5rem 1rem;
   }
   .header .menu {
     display: flex;
@@ -364,6 +408,22 @@ html {
     letter-spacing: 0.6rem;
     text-transform: capitalize;
     padding-top: 1rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .socials-footer {
+    padding: 1rem 20rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .dev-familiar {
+    text-align: center;
+    font-family: "3d_custom";
+    font-size: 3rem;
+    padding: 1rem 0;
   }
 }
 

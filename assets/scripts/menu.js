@@ -20,15 +20,14 @@ const dynamic_content={
             <div class="personal-shoot">
                 <h2>Portrait</h2>
                 <div class="personalshoot-pics">
-                    <img src="./assets/images/personal-shoot-girl.jpg" alt="">
+                    <img src="./assets/images/personal-shoot-girl.jpg" "alt="">
                     <img src="./assets/images/personal-shoot-girl-1.jpg" alt="">
                     <img src="./assets/images/personal-shoot-girl-2.jpg" alt="">
                     <img src="./assets/images/personal-shoot-girl-3.jpg" alt="">
-                    <img src="./assets/images/personal-shoot-guy.jpg" alt="">
-                    <img src="./assets/images/personal-shoot-guy-1.jpg" alt="">
-                    <img src="./assets/images/personal-shoot-guy-2.jpg" alt="">
-                    <img src="./assets/images/personal-shoot-guy-3.jpg" alt="">
-                    <img src="./assets/images/personal-shoot-guy-closeUp.jpg" alt="">
+                    <img src="./assets/images/personal-shoot-guy.jpg" class="long first" alt="">
+                    <img src="./assets/images/personal-shoot-guy-1.jpg" class="long first" alt="">
+                    <img src="./assets/images/personal-shoot-guy-2.jpg" class="long" alt="">
+                    <img src="./assets/images/personal-shoot-guy-closeUp.jpg" class="long" alt="">
                 </div>
             </div>
             <div class="events">
@@ -52,7 +51,7 @@ const dynamic_content={
         <div class="about">
     
     <span class="about-heading">
-    <h1>about</h1></span>
+    <h1>About me</h1></span>
 
     <div class="about-content">
     <div class="camera">
@@ -84,9 +83,9 @@ const dynamic_content={
     "home":`
     <section class="photos main-content">
         <div class="grid-two-col">
-            <img src="./assets/images/wedding-ring-pride.jpg" class="ring"
+            <img src="./assets/images/wedding-ring-pride.jpg" class="ring fit"
                 alt="Groom putting a ring on the bride's ring-finger">
-            <img src="./assets/images/wedding-ring-groom.jpg" class="ring"
+            <img src="./assets/images/wedding-ring-groom.jpg" class="ring fit"
                 alt="pride putting a ring on the groom's ring-finger">
         </div>
         <div class="grid-one-col">
@@ -112,7 +111,7 @@ if(x.matches){
     desktopAbout.innerHTML = dynamic_content.about
 }
 
-console.log(social.pageYOffset);
+
 
 
 for(const line of burger){
