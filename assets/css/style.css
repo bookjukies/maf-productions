@@ -86,7 +86,7 @@ html {
   font-family: "Custom_filled";
   src: url("../fonts/bullpen_hv.ttf");
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .camera {
     width: 100%;
   }
@@ -286,13 +286,27 @@ html {
   }
 }
 @media only screen and (min-width: 768px) {
+  header {
+    padding: 0;
+    margin: 0;
+    width: 97vw;
+  }
+
+  .anchor .about {
+    display: none;
+  }
+
   .header {
-    padding: 1rem 5rem;
+    padding: 1rem;
     position: relative;
   }
 
-  .main-content .anchor .about {
-    display: none;
+  .main-content .potfolio h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-family: "Custom_filled";
+    color: #ce933a;
   }
   .main-content .potfolio .personalshoot-pics {
     display: flex;

@@ -24,7 +24,6 @@ const dynamic_content={
                     <img src="./assets/images/personal-shoot-girl-1.jpg" alt="">
                     <img src="./assets/images/personal-shoot-girl-2.jpg" alt="">
                     <img src="./assets/images/personal-shoot-girl-3.jpg" alt="">
-    
                     <img src="./assets/images/personal-shoot-guy.jpg" class="long first" alt="">
                     <img src="./assets/images/personal-shoot-guy-1.jpg" class="long first" alt="">
                     <img src="./assets/images/personal-shoot-guy-2.jpg" class="long" alt="">
@@ -50,15 +49,15 @@ const dynamic_content={
     // <-------separate-------->
     "about":`
         <div class="about">
-    <div class="about-text">
+    
     <span class="about-heading">
     <h1>About me</h1></span>
-    <div class="professional">
-        <img src="/assets/images/maf-professional.jpg" class="camera" alt="">
-    </div>
 
     <div class="about-content">
-
+    <div class="camera">
+        <img src="/assets/images/maf-camera.jpg" alt="">
+    </div>
+<div class="about-text">
 <p>
     I am Mafungwase Nxumalo, a photographer based in durban. I shoot weddings, events and portraits .
     I believe that everything we see and surrounds us is practically a memory but my job as a photographer it is to
@@ -74,12 +73,10 @@ const dynamic_content={
     for me to always build a professional trusting relationships with my clients.
     Allow me to tell your story through my lense.</p>
 </div>
-    
-</div>
-
-    <div class="camera">
-        <img src="/assets/images/maf-camera.jpg" class="camera"alt="">
+    <div class="professional">
+        <img src="/assets/images/maf-professional.jpg" alt="">
     </div>
+</div>
 </div>`
     ,
     // <-------separate-------->
