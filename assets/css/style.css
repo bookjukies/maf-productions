@@ -87,6 +87,10 @@ html {
   src: url("../fonts/bullpen_hv.ttf");
 }
 @media only screen and (max-width: 768px) {
+  .camera {
+    width: 100%;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
@@ -213,12 +217,14 @@ html {
   }
   main .about {
     font-size: 1.5rem;
-    margin: 5rem 0;
+    margin: 0 0 4rem 0;
     padding: 0 2rem;
   }
   main .about .about-heading {
+    font-family: "3d_custom";
     text-transform: capitalize;
     font-size: 2rem;
+    color: #ce933a;
   }
   main .about p {
     font-size: 2rem;

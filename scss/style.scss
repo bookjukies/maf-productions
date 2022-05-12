@@ -14,6 +14,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .camera{
+    width: 100%;
+  }
 .header {
   display: flex;
   flex-direction: row;
@@ -158,12 +161,13 @@ main{
   }
 & .about{
   font-size: 1.5rem;
-  margin: 5rem 0;
+  margin: 0 0 4rem 0;
   padding: 0 2rem;
   & .about-heading{
-    
+    font-family: "3d_custom";
     text-transform: capitalize;
     font-size: 2rem;
+    color: $gold-color;
   } 
   & p{
 
